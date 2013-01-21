@@ -14,6 +14,6 @@ setup(
 		"bin/venvbin",
 		"bin/venvsymlinks"],
 	description = "Set of bash scripts that make bins installed in virtualenvs useful elsewhere.",
-	long_description = "\n" + open("README.md").read(),
+	long_description = "\n" + open("README.rst").read(),
 )
 
