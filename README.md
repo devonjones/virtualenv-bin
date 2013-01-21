@@ -24,7 +24,8 @@ example
 
 I want to install and use httpie, but I don't want any of it's dependencies
 interfering with my broader environment.  Note: for this example, I use
-/opt/virtualenvs for all virtualenvs
+/opt/virtualenvs for all virtualenvs and httpie because installing that is
+why I wrote this in the first place.
 
     $ mkvirtualenv httpie
     $ source /opt/virtualenvs/httpie/bin/activate
@@ -33,4 +34,12 @@ interfering with my broader environment.  Note: for this example, I use
     $ cd ~/bin
     $ /opt/virtualenvs/httpie/bin/venvsymlinks
     $ ~/bin/http --help
+
+installation
+------------
+
+You can install virtualenv-bin using pip:
+
+    $ pip install --upgrade virtualenv-bin
+
 
