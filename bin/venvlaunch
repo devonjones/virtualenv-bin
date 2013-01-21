@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+bindir=$(dirname $0)
+if echo "$bindir" | grep -q '/bin$' ; then
+	VENV=$(dirname $bindir)
+else
+	VENV=$bindir
+fi
+
+. $VENV/bin/activate
+$VENV/bin/python $VENV/bin/$@
+deactivate
