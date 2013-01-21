@@ -7,7 +7,8 @@ setup(
 	name="virtualenv-bin",
 	version="0.9.0",
 	author="Devon Jones",
-	author_email="devon@knewton.com",
+	author_email="devon.jones@gmail.com",
+	url="https://github.com/devonjones/virtualenv-bin",
 	license = "Apache",
 	scripts = [
 		"bin/venvbin",
