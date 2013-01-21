@@ -1,0 +1,9 @@
+#!/bin/bash
+VENVBIN=`readlink -f $0`
+VENV=$(dirname $VENVBIN)
+
+for i in `ls $VENV | grep -v -e activate -e python -e pygmentize -e pip -e easy_install -e venv.* -e get_env_details`
+do
+	echo $i
+	ln -s $VENV/venvbin $i
+done

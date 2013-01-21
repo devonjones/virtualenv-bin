@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+PROG=$(basename $0)
+VENVBIN=`readlink -f $0`
+VENV=$(dirname $VENVBIN)
+. $VENV/activate
+$VENV/python $VENV/$PROG $@
+deactivate
